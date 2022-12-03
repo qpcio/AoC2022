@@ -24,9 +24,12 @@ public class Day3 {
 
 
     public static void main(String[] args) {
+        long time = System.currentTimeMillis();
         readInput("src/main/java/Day3/inputday3.txt");
         System.out.println(getRucksacksTotalValue());
         System.out.println(getBadgesTotalValue());
+        time = System.currentTimeMillis() - time;
+        System.out.println(time);
     }
 
     private static int getRucksacksTotalValue() {
