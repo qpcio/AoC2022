@@ -11,10 +11,12 @@ public class Day6 {
     private static String buffer;
 
     public static void main(String[] args) {
+        long time = System.currentTimeMillis();
         readInput("src/main/java/Day6/inputDay6.txt");
         Receiver receiver = new Receiver(buffer);
         System.out.println(receiver.startOfData(4));
         System.out.println(receiver.startOfData(14));
+        System.out.println(System.currentTimeMillis()-time);
     }
 
     private static void readInput(String pathToInput){

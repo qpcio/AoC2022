@@ -11,7 +11,7 @@ public class Receiver {
     }
 
     public int startOfData(int noOfDifferentCharsNeeded){
-        for(int i=0;i<buffer.length()-4;i++){
+        for(int i=0;i<buffer.length()-noOfDifferentCharsNeeded;i++){
             List<Character> characters = new ArrayList<>();
             characters.add(buffer.charAt(i));
             for(int j=1;j<noOfDifferentCharsNeeded;j++) {
